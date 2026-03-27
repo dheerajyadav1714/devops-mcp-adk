@@ -33,6 +33,8 @@ This creates a table `devops.pipeline_logs` with three failed pipeline examples.
 ### 2. Deploy the MCP Toolbox server
 
 ```bash
+The Dockerfile automatically downloads the `toolbox` binary during the build, so no manual download is required.
+
 cd mcp-toolbox-server
 
 # Build and push the container image
