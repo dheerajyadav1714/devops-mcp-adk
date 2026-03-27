@@ -108,21 +108,3 @@ gcloud projects add-iam-policy-binding YOUR_PROJECT_ID \
 
 Apache 2.0
 ```
-
----
-
-## Push to GitHub
-
-```bash
-# Create the repository on GitHub first (public, no README, no license)
-# Then run:
-cd ~/devops-mcp-adk   # the folder containing all the above files
-git init
-git add .
-git commit -m "Initial commit: MCP Toolbox server and ADK agent"
-git remote add origin https://github.com/YOUR_USERNAME/devops-mcp-adk.git
-git branch -M main
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` and `devops-mcp-adk` with your actual GitHub username and repository name.
