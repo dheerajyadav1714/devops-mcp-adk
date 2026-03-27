@@ -23,6 +23,8 @@ Run the provided script to create a dataset and insert sample pipeline logs:
 
 ```bash
 cd bigquery-setup
+Make the script executable:
+chmod +x bigquery-setup/setup_bigquery.sh
 ./setup_bigquery.sh
 ```
 
