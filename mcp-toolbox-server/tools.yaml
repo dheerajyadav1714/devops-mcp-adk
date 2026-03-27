@@ -1,1 +1,20 @@
+sources:
+  devops-bq:
+    kind: bigquery
+    project: YOUR_PROJECT_ID   # replace with your actual project ID
 
+tools:
+  get_failed_pipelines:
+    kind: bigquery-sql
+    source: devops-bq
+    statement: |
+      SELECT pipeline_id, logs, status, timestamp
+      FROM `YOUR_PROJECT_ID.devops.pipeline_logs`
+      WHERE status = 'FAILED'
+      ORDER BY timestamp DESC
+      LIMIT 5
+    description: Fetch latest failed pipeline logs
+
+toolsets:
+  devops_toolset:
+    - get_failed_pipelines
