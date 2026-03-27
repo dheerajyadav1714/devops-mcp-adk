@@ -107,4 +107,3 @@ gcloud projects add-iam-policy-binding YOUR_PROJECT_ID \
 ## License
 
 Apache 2.0
-```
