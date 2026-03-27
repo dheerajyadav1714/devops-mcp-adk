@@ -79,6 +79,9 @@ Show me the last 3 failed pipelines
 
 The agent will call the MCP Toolbox server, query BigQuery, and return a structured answer with pipeline IDs, root causes, categories, and suggested fixes.
 
+<img width="1864" height="910" alt="msedge_DfwnFIZUBQ" src="https://github.com/user-attachments/assets/46babe40-fb6f-4585-92d3-d3f5d9c16026" />
+
+
 ## Clean Up
 
 To avoid ongoing charges, delete the Cloud Run services and the BigQuery dataset:
